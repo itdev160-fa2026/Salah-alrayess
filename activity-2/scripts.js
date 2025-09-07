@@ -68,7 +68,7 @@ let day = "Monday";
 
 switch(day) {
   case "Monday":
-    console.log("Start of the week!");
+    console.log("It's Monday - start of the week!");
     break;
   case "Friday":
     console.log("Weekend is near!");
