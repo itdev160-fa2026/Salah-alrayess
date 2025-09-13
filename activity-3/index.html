@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activity 3 - Greeting Card</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Dynamic Greeting Card</h1>
+
+  <div class="card-container">
+    <h2 id="greeting-message">Welcome 🙂</h2>
+    <img id="greeting-image" src="images/card1.jpg" alt="Welcome greeting">
+
+    <div class="controls">
+      <button onclick="showBirthday()">Birthday</button>
+      <button onclick="showHoliday()">Holiday</button>
+      <button onclick="showThankYou()">Thank You</button>
+      <button onclick="showRandom()">Random</button>
+    </div>
+
+    <div class="personalize">
+      <input type="text" id="nameInput" placeholder="Enter your name">
+      <button onclick="personalizeGreeting()">Personalize</button>
+    </div>
+  </div>
+
+  <div id="output"></div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
