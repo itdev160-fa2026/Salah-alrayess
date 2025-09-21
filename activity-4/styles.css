@@ -1,0 +1,128 @@
+/* Basic Layout */
+body {
+  font-family: sans-serif;
+  background: #f2f2f2;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* To-do Container */
+.todo-container {
+  background: #fff;
+  max-width: 500px;
+  margin: auto;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.input-section {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
+.input-section input {
+  flex: 1;
+  padding: 8px;
+}
+
+.input-section button {
+  padding: 8px 12px;
+  background: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.input-section button:hover {
+  background: #218838;
+}
+
+/* To-do List */
+#todo-list {
+  padding: 0;
+  list-style-type: none;
+}
+
+#todo-list li {
+  padding: 8px;
+  margin-bottom: 6px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+/* States */
+.done {
+  text-decoration: line-through;
+  color: gray;
+  background: #d4edda;
+}
+
+.pending {
+  background: #fff3cd;
+  color: #333;
+}
+
+/* Demo Section */
+.demo-section {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 10px;
+  border: 1px dashed #aaa;
+  background: #fafafa;
+}
+/* Task list items */
+#todo-list li {
+  display: flex;
+  justify-content: space-between; /* pushes text left, badge right */
+  align-items: center;
+  background: #fff;
+  padding: 8px 12px;
+  margin: 6px 0;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#todo-list li:hover {
+  background: #f9f9f9;
+}
+
+/* Status badges */
+li span:last-child {
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+  white-space: nowrap; /* prevent wrapping */
+}
+
+/* Pending badge */
+li.pending span:last-child {
+  background-color: #fceabb;
+  color: #b9770e;
+  border: 1px solid #e1b12c;
+}
+
+/* Done badge */
+li.done span:last-child {
+  background-color: #d5f5e3;
+  color: #1e8449;
+  border: 1px solid #27ae60;
+  text-decoration: none; /* status stays clean */
+}
