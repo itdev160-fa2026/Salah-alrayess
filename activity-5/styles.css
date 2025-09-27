@@ -1,0 +1,68 @@
+/* Basic page styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Widget container */
+.math-widget {
+    background: #ffffff;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 320px;
+    margin: 20px auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Input fields */
+input[type="number"] {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+/* Buttons */
+.buttons {
+    margin: 15px 0;
+}
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s, transform 0.2s;
+}
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+button:active {
+    background-color: #004080;
+
+}
+    #clearBtn {
+    background-color: #dc3545;
+}
+#clearBtn:hover {
+    background-color: #a71d2a;
+}
+
+
+/* Result styling */
+.result {
+    margin-top: 15px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #333;
+}
