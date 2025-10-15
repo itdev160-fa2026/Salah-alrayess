@@ -1,0 +1,199 @@
+/* Base Layout */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.todo-container {
+  background: #fff;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Input Controls */
+.input-controls {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.input-controls input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+#prioritySelect {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: #f8f8f8;
+}
+
+.input-controls button {
+  padding: 10px 15px;
+  background: linear-gradient(45deg, #667eea, #764ba2);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.input-controls button:hover {
+  opacity: 0.9;
+}
+
+/* Filter Section */
+.filter-section {
+  margin-bottom: 15px;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 8px 12px;
+  background: #eee;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  background: #764ba2;
+  color: #fff;
+}
+
+/* Task List */
+#todo-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fafafa;
+  margin-bottom: 8px;
+  padding: 10px;
+  border-radius: 8px;
+  border-left: 8px solid #ccc;
+  transition: 0.3s;
+}
+
+.task-item.completed {
+  background: #e3fcef;
+  text-decoration: line-through;
+  color: gray;
+}
+
+.task-priority {
+  width: 8px;
+  height: 40px;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.priority-low {
+  background-color: #52c41a;
+}
+
+.priority-medium {
+  background-color: #faad14;
+}
+
+.priority-high {
+  background-color: #f5222d;
+}
+
+/* Task Actions */
+.task-actions {
+  display: flex;
+  gap: 5px;
+}
+
+.task-btn {
+  background: linear-gradient(45deg, #667eea, #764ba2);
+  border: none;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.task-btn:hover {
+  opacity: 0.85;
+}
+
+/* Empty State */
+.empty-state {
+  text-align: center;
+  font-style: italic;
+  color: #777;
+  margin-top: 10px;
+}
+
+/* Bulk Actions */
+.controls-section {
+  margin-top: 20px;
+}
+
+.bulk-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bulk-btn {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(45deg, #667eea, #764ba2);
+  color: white;
+}
+
+.bulk-btn.danger {
+  background: linear-gradient(45deg, #ff4d4f, #a8071a);
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .input-controls {
+    flex-direction: column;
+  }
+
+  .task-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .task-actions {
+    margin-top: 5px;
+  }
+}
