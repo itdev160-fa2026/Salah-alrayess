@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activity 7: Product Catalog Display</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Activity 7: Product Catalog</h1>
+  <p>Open the console (F12) to see JavaScript demonstrations.</p>
+
+  <div class="catalog-container">
+    <!-- Search and Filter Controls -->
+    <div class="controls">
+      <input type="text" id="searchInput" placeholder="Search products...">
+      <select id="categoryFilter">
+        <option value="all">All Categories</option>
+        <option value="electronics">Electronics</option>
+        <option value="clothing">Clothing</option>
+        <option value="books">Books</option>
+      </select>
+      <button id="clearFilters">Clear Filters</button>
+    </div>
+
+    <!-- Product Grid -->
+    <div id="product-grid" class="product-grid"></div>
+
+    <!-- Output for JavaScript Demonstrations -->
+    <div id="output"></div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
