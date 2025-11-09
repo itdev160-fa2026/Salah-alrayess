@@ -1,0 +1,147 @@
+/* Reset and global styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    background: linear-gradient(135deg, #ece9e6, #ffffff);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Header and instructions */
+h1 {
+    margin-bottom: 8px;
+    text-align: center;
+    color: #222;
+}
+
+p {
+    text-align: center;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+/* Centered form container */
+.form-container {
+    background: #fff;
+    width: 100%;
+    max-width: 480px;
+    padding: 40px 35px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Each input group */
+.form-group {
+    margin-bottom: 22px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label text */
+label {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 6px;
+}
+
+/* Input boxes */
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1.5px solid #ccc;
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: #fafafa;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+    text-align: left;
+}
+
+/* Center vertically inside white box */
+input,
+select,
+textarea {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Focus and hover states */
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #007bff;
+    background-color: #fff;
+    outline: none;
+}
+
+/* Error & success visuals */
+input.invalid,
+select.invalid,
+textarea.invalid {
+    border-color: #dc3545;
+}
+
+input.valid,
+select.valid,
+textarea.valid {
+    border-color: #28a745;
+}
+
+/* Error text */
+.error-message {
+    color: #dc3545;
+    font-size: 0.85rem;
+    margin-top: 4px;
+}
+
+/* Submit button */
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: #007bff;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+}
+
+button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+/* Form status text */
+#formStatus {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 600;
+    color: #007bff;
+}
+
+/* Responsive view */
+@media (max-width: 600px) {
+    .form-container {
+        width: 90%;
+        padding: 30px;
+    }
+}
