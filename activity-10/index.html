@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 10: Tic-Tac-Toe with localStorage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Activity 10: Tic-Tac-Toe</h1>
+    <p>Open the console to see localStorage demonstrations.</p>
+
+    <div class="game-container">
+
+        <!-- Game board -->
+        <div id="game-board" class="board">
+            <!-- 9 cells -->
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+
+        <!-- Game status -->
+        <div id="status" class="status">Player X's turn</div>
+
+        <!-- Control buttons -->
+        <div class="controls">
+            <button id="new-game">New Game</button>
+            <button id="reset-stats">Reset Statistics</button>
+        </div>
+
+        <!-- Game statistics -->
+        <div class="stats">
+            <h3>Statistics</h3>
+            <p>Total Games: <span id="total-games">0</span></p>
+            <p>X Wins: <span id="x-wins">0</span></p>
+            <p>O Wins: <span id="o-wins">0</span></p>
+            <p>Draws: <span id="draws">0</span></p>
+        </div>
+
+    </div>
+
+    <!-- Output div -->
+    <div id="output"></div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
